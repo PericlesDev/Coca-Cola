@@ -1,0 +1,85 @@
+<!DOCTYPEhtml >
+< html  lang =" pt-br " >
+< cabeça >
+    < meta  charset =" UTF-8 " >
+    < meta  http-equiv = " Conteúdo compatível com X-UA " =" IE=edge " >
+    < meta  name =" viewport " content =" largura=largura do dispositivo, escala inicial=1.0 " >
+    < link  rel =" folha de estilo " href =" https://unpkg.com/swiper/swiper-bundle.css " >
+    < link  rel =" folha de estilo " href =" style.css " >
+    < title > Site Coca-Cola </ title >
+</ cabeça >
+< corpo >
+    < seção >
+        < div  class =" círculo " > </ div >
+        < cabeçalho >
+            < a  href =" # " > < img  src =" imagens/logo.png " class =" logo " > </ a >
+            < div  class =" toggle " onClick =" toggleMenu() " > </ div >
+            < ul  classe =" navegação " >
+            < li > < a  href =" # " > Página inicial </ a > </ li >
+            < li > < a  href =" # " > Menu </ a > </ li >
+            < li > < a  href =" # " > Detalhes </ a > </ li >
+            < li > < a  href =" # " > Contato </ a > </ li >
+            </ ul >
+        </ cabeçalho >
+        < classe div  =" conteúdo " >
+            < classe div  =" textBox " >
+                < h2 > Coca&Cola </ h2 >
+                < p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque quos harum corporis
+                aut hic commodi unde suscipit quaerat sit nesciunt similique voluptas, laboriosam, eos
+                aliquam distinctio, consectetur labore facilis ut provident aliquid laudantium repudiandae
+                odi sapiente. Expedita, aliquid voluptatibus unde numquam dolores iure enim explicabo
+                animi quisquam, quod, iusto voluptatem consectetur quas veniam vitae. Quidem iusto ut
+                ullam, hic cumque eligendi nobis aperiam veniam corporis non sit, aut laboriosam? </ p >
+                < a  href =" # " > Leia aqui </ a >
+            </ div >
+
+          < classe div  =" imgBox " >
+            < div  class =" swiper-container " >
+                < div  class =" swiper-wrapper " >
+                  < div  class =" swiper-slide " > < img  src =" images/cocacola1.png " > </ div >
+                  < div  class =" swiper-slide " > < img  src =" images/cocacola2.png " > </ div >
+                  < div  class =" swiper-slide " > < img  src =" images/cocacola3.png " > </ div >
+                  < div  class =" swiper-slide " > < img  src =" images/cocacola4.png " > </ div >
+                  < div  class =" swiper-slide " > < img  src =" images/cocacola5.png " > </ div >
+                  < div  class =" swiper-slide " > < img  src =" images/cocacola6.png " > </ div >
+                  </ div >
+                </ div >
+              </ div >
+
+
+        </ div >
+        < ul  class =" sci " >
+            < li > < a  href =" # " > < img  src =" imagens/facebook.png " > </ a > </ li >
+            < li > < a  href =" # " > < img  src =" imagens/twitter.png " > </ a > </ li >
+            < li > < a  href =" # " > < img  src =" imagens/instagram.png " > </ a > </ li >
+        </ ul >
+    </ seção >
+< script  src =" https://unpkg.com/swiper@8/swiper-bundle.min.js " > </ script >
+< roteiro >
+    var  swiper  =  new  Swiper ( ".mySwiper" ,  {
+      efeito : "fluxo de cobertura" ,
+      grabCursor : true ,
+      centeredSlides : true ,
+      slidesPerView : "auto" ,
+      efeito coverflow : {
+        girar : 0 ,
+        esticar : 0 ,
+        profundidade : 200 ,
+        modificador : 1 ,
+        slideShadows : true ,
+      } ,
+      paginação : {
+        el : ".swiper-pagination" ,
+      } ,
+      laço : verdadeiro ,
+    } ) ;
+
+    função  alternarMenu ( ) {
+        const  menuToggle  =  document . querySelector ( '.toggle' ) ;
+        const  navegação  =  documento . querySelector ( '.navigation' ) ;
+        menuToggle . classList . alternar ( 'ativo' )
+        navegação . classList . alternar ( 'ativo' )
+    }
+  </ script >
+</ corpo >
+</ html >
